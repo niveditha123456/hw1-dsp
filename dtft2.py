@@ -1,7 +1,10 @@
-#dtft 
+#dtft sinsoid
 import numpy as np
 from matplotlib import pyplot as plt
-x=[2,4,3,6,7]
+f=100
+fs=250
+m=np.arange(1,150)
+x=np.cos(2*np.pi*f/fs*m)
 w=np.arange(-np.pi,np.pi,0.001*np.pi);#(-pi to pi)
 X=[]
 for i in range(0,len(w)):
